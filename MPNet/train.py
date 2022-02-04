@@ -49,10 +49,10 @@ def main(args):
 	# Train the Models
 	total_loss=[]
 	print(len(dataset))
-	print len(targets)
+	print(len(targets))
 	sm=100 # start saving models after 100 epochs
 	for epoch in range(args.num_epochs):
-		print "epoch" + str(epoch)
+		print("epoch" + str(epoch))
 		avg_loss=0
 		for i in range (0,len(dataset),args.batch_size):
 			# Forward, Backward and Optimize
